@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Error from "./pages/error";
-import Home from "./pages/home";
-import MovieDetails from "./pages/movie-details";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Error from "./pages/Error";
+import Home from "./pages/Home";
+import MovieDetails from "./pages/MovieDetails";
 import GlobalStyle from "./styles/global.styled";
 const App: React.FC = () => {
   const theme = {
@@ -15,8 +15,10 @@ const App: React.FC = () => {
     primaryText: "#FFFFFF",
     secondaryText: "#BCBCBC",
   };
+  console.log("APP");
+  
   return (
-    <ThemeProvider theme={theme}>
+     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Router>
         <Header />

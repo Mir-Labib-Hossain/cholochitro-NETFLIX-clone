@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        background-color: #111018  /* primaryBackground */
     }
 
     *{
@@ -22,6 +23,15 @@ const GlobalStyle = createGlobalStyle`
     button{
         border: none;
         background-color: transparent;
+    }
+
+    p{
+        font-weight: bold;
+    }
+    
+    p,span,h1{
+        font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
     }
 `;
 

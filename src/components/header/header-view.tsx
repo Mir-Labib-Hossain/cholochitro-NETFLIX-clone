@@ -5,7 +5,7 @@ import { HeaderWrapper } from "./styled";
 const HeaderView: React.FC = () => {
   return (
     <HeaderWrapper>
-      <Row justifyContent="space-between" alignItems="center">
+      <Row justifyContent="space-between" alignItems="center" wrap>
         <Row justifyContent="space-between" alignItems="center">
           <Image src={HeaderIcon} />
           <Header2>CholoChitrow</Header2>
@@ -23,7 +23,7 @@ const HeaderView: React.FC = () => {
           <Icon className="fa-solid fa-magnifying-glass"></Icon>
           <Paragraph>CocoBar</Paragraph>
 
-          <Button>SIGN IN</Button>
+          <Button active>SIGN IN</Button>
         </Row>
       </Row>
     </HeaderWrapper>
